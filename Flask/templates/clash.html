@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Programming Class - বাংলাদেশ</title>
+    <style>
+        /* Reset কিছু বেসিক */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'SolaimanLipi', Arial, sans-serif;
+            background-color: #f9fafd;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2a9df4;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .course-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .course {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .course:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+
+        .course h2 {
+            color: #2a9df4;
+            margin-bottom: 10px;
+        }
+
+        .course p {
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .price {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #27ae60;
+            margin-bottom: 15px;
+        }
+
+        .buy-btn {
+            background-color: #2a9df4;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-btn:hover {
+            background-color: #1e75d1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #eee;
+            margin-top: 60px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .course-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>প্রোগ্রামিং ক্লাস - বাংলাদেশ</h1>
+    <p>সহজ ভাষায় শিখুন প্রোগ্রামিং এবং ওয়েব ডেভেলপমেন্ট</p>
+</header>
+
+<main>
+    <section class="course-list">
+
+        <article class="course">
+            <h2>Python</h2>
+            <p>শুরুর জন্য আদর্শ, বহুমুখী এবং ওয়েব, ডাটা সায়েন্সে ব্যবহৃত হয়।</p>
+            <div class="price">৳ ২,৫০০</div>
+            <a href="/buy2" class="buy-btn">কোর্স কিনুন</a>
+        </article>
+
+        <article class="course">
+            <h2>C++</h2>
+            <p>সিস্টেম, সফটওয়্যার এবং গেম ডেভেলপমেন্টের জন্য শক্তিশালী ভাষা।</p>
+            <div class="price">৳ ৩,০০০</div>
+            <a href="/buy4" class="buy-btn">কোর্স কিনুন</a>
+        </article>
+
+        <article class="course">
+            <h2>C#</h2>
+            <p>উইন্ডোজ অ্যাপ, গেম (Unity) এবং এন্টারপ্রাইজ সফটওয়্যার তৈরিতে ব্যবহৃত।</p>
+            <div class="price">৳ ২,৮০০</div>
+            <a href="/buy5" class="buy-btn">কোর্স কিনুন</a>
+        </article>
+
+        <article class="course">
+            <h2>Java</h2>
+            <p>অ্যান্ড্রয়েড অ্যাপ, এন্টারপ্রাইজ এবং ওয়েব ডেভেলপমেন্টে জনপ্রিয়।</p>
+            <div class="price">৳ ২,৭০০</div>
+            <a href="/buy1" class="buy-btn">কোর্স কিনুন</a>
+        </article>
+
+        <article class="course">
+            <h2>JavaScript</h2>
+            <p>ওয়েবের ভাষা; ইন্টারেক্টিভ ফ্রন্টএন্ড ও ব্যাকএন্ড ডেভেলপমেন্টে ব্যবহৃত।</p>
+            <div class="price">৳ ২,৬০০</div>
+            <a href="/buy21" class="buy-btn">কোর্স কিনুন</a>
+        </article>
+
+        <article class="course">
+            <h2>HTML &amp; CSS</h2>
+            <p>ওয়েবসাইট ডিজাইন ও লেআউটের মূল ভিত্তি।</p>
+            <div class="price">৳ ১,৫০০</div>
+            <a href="/buy?course=HTML%20%26%20CSS" class="buy-btn">কোর্স কিনুন</a>
+        </article>
+
+    </section>
+</main>
+
+<footer>
+    &copy; ২০২৫ প্রোগ্রামিং ক্লাস - বাংলাদেশ | সর্বস্বত্ব সংরক্ষিত
+</footer>
+
+</body>
+</html>

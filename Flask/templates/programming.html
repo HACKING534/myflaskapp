@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Programming Courses with Prices</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f4f8;
+            margin: 40px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+        .course-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .course {
+            background: white;
+            padding: 20px 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .course-info {
+            max-width: 60%;
+        }
+        .course h2 {
+            margin: 0 0 8px;
+            color: #1a73e8;
+        }
+        .course p {
+            margin: 0;
+            font-size: 14px;
+            color: #555;
+        }
+        .price {
+            font-weight: bold;
+            font-size: 18px;
+            color: #27ae60;
+            margin-right: 20px;
+            min-width: 70px;
+            text-align: right;
+        }
+        .buy-btn {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .buy-btn:hover {
+            background-color: #155dbe;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Programming Courses and Their Prices</h1>
+
+<div class="course-container">
+
+    <div class="course">
+        <div class="course-info">
+            <h2>Python</h2>
+            <p>Beginner-friendly, versatile and widely used for web, data science, automation.</p>
+        </div>
+        <div class="price">৳ 2500</div>
+        <a href="/buy2" class="buy-btn">Buy</a>
+    </div>
+
+    <div class="course">
+        <div class="course-info">
+            <h2>C++</h2>
+            <p>Powerful language for system/software, game development and performance-critical apps.</p>
+        </div>
+        <div class="price">৳ 3000</div>
+        <a href="/buy4" class="buy-btn">Buy</a>
+    </div>
+
+    <div class="course">
+        <div class="course-info">
+            <h2>C#</h2>
+            <p>Used mainly for Windows applications, games (Unity), and enterprise software.</p>
+        </div>
+        <div class="price">৳ 2800</div>
+        <a href="/buy5" class="buy-btn">Buy</a>
+    </div>
+
+    <div class="course">
+        <div class="course-info">
+            <h2>Java</h2>
+            <p>Popular for Android apps, enterprise-level applications, and web development.</p>
+        </div>
+        <div class="price">৳ 2700</div>
+        <a href="/buy1" class="buy-btn">Buy</a>
+    </div>
+
+    <div class="course">
+        <div class="course-info">
+            <h2>JavaScript</h2>
+            <p>The language of the web; used for interactive front-end and back-end development.</p>
+        </div>
+        <div class="price">৳ 2600</div>
+        <a href="/buy21" class="buy-btn">Buy</a>
+    </div>
+
+    <div class="course">
+        <div class="course-info">
+            <h2>HTML & CSS</h2>
+            <p>Fundamentals of web design and layout – create beautiful websites and user interfaces.</p>
+        </div>
+        <div class="price">৳ 1500</div>
+        <a href="/buy?course=HTML%20%26%20CSS" class="buy-btn">Buy</a>
+    </div>
+
+</div>
+
+</body>
+</html>

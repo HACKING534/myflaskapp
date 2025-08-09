@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>লাইভ ক্লাস - চলছে</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f9fafb;
+            margin: 0; padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            color: #2c3e50;
+        }
+        header {
+            background-color: #1a73e8;
+            width: 100%;
+            padding: 20px 0;
+            color: white;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        main {
+            margin-top: 40px;
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            max-width: 720px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        footer {
+            margin-top: auto;
+            padding: 15px 0;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>লাইভ ক্লাস চলছে</header>
+    <main>
+        <p>স্বাগতম! আজকের ক্লাস শুরু হয়েছে। নিচের ভিডিও প্লেয়ার থেকে ক্লাস দেখুন।</p>
+        <video controls autoplay muted>
+            <source src="{{ url_for('static', filename='live_stream.mp4') }}" type="video/mp4" />
+            আপনার ব্রাউজার ভিডিও প্লে করতে পারছে না।
+        </video>
+    </main>
+    <footer>© 2025 তোমার প্রতিষ্ঠান নাম</footer>
+</body>
+</html>

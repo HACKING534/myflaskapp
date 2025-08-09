@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy From</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .buy-form {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .buy-form h2 {
+            margin-bottom: 25px;
+            color: #2c3e50;
+            text-align: center;
+        }
+        .buy-form label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #34495e;
+        }
+        .buy-form input,
+        .buy-form select {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 20px;
+            border: 1.8px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        .buy-form input:focus,
+        .buy-form select:focus {
+            border-color: #1a73e8;
+            outline: none;
+        }
+        .buy-form button {
+            width: 100%;
+            padding: 12px 0;
+            background-color: #1a73e8;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .buy-form button:hover {
+            background-color: #155ab6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="buy-form">
+    <h2>Buy Course</h2>
+    <form action="/submit_all" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Your full name" />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="your@example.com" />
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required placeholder="01XXXXXXXXX" pattern="[0-9]{11}" />
+
+    <label for="course_name">Select Course:</label>
+    <select id="course_name" name="course_name" required>
+        <option value="">--Select a Course--</option>
+        <option value="Python">Python - ৳2500</option>
+        <option value="C++">C++ - ৳3000</option>
+        <option value="C#">C# - ৳2800</option>
+        <option value="Java">Java - ৳2700</option>
+        <option value="JavaScript">JavaScript - ৳2600</option>
+        <option value="HTML & CSS">HTML & CSS - ৳1500</option>
+    </select>
+
+    <button type="submit">Buy Now</button>
+</form>
+
+</div>
+
+</body>
+</html>
